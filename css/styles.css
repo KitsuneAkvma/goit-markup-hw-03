@@ -150,15 +150,18 @@ body {
 /*---Feature section---*/
 
 .feature {
-  margin: 5.875rem 13.438rem;
-
+  margin-block: 5.875rem;
+}
+.feature > ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  column-gap: 1.875rem;
+
+  list-style: none;
 }
 .feature-text {
-  width: 16rem;
+  width: 16.875rem;
 }
-
 .feature-text > h3 {
   font-size: 14px;
   font-weight: var(--fw-bld);
@@ -172,21 +175,24 @@ body {
 /*---What do we do section---*/
 .what-do-we-do {
   margin-bottom: 5.25em;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
+
 .what-do-we-do > h2 {
   margin-bottom: 3.125rem;
 
   font-size: 36px;
   font-weight: var(--fw-bld);
 }
-.what-do-we-do-photos > img {
+.what-do-we-do-photos > ul > li > img {
   margin-right: 1.875rem;
 }
-
+.what-do-we-do-photos > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
 /*---Our team section---*/
 
 .our-team {
@@ -198,16 +204,22 @@ body {
 
   background-color: var(--clr-background-darker);
 }
+.our-team * {
+  padding: 0;
+}
 .our-team > h2 {
   margin-block: 5.875rem 3.125rem;
   font-size: 36px;
   font-weight: var(--fw-bld);
 }
-.team-members {
+
+.team-members > ul {
   display: flex;
+  column-gap: 1.875rem;
+
+  list-style: none;
 }
 .team-member {
-  margin-left: 1.875rem;
   margin-bottom: 5.875rem;
 
   background-color: var(--clr-background);
@@ -327,15 +339,15 @@ body {
 /*---Projects group---*/
 .projects {
   margin-top: 2.125rem;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
+.projects > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.875rem;
 
+  list-style: none;
+}
 .project {
-  margin-bottom: 1.8rem;
-
   box-sizing: border-box;
 
   border: 1px solid #eeeeee;
