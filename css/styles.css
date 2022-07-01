@@ -1,0 +1,362 @@
+/*---Variables---*/
+:root {
+  --clr-background: #fff;
+  --clr-background-darker: #f5f4fa;
+  --clr-light: #ececec;
+  --clr-dark: #2f303a;
+  --clr-blue: #2196f3;
+  --clr-font: #212121;
+  --clr-font-lght: #757575;
+
+  --ff-main: 'Roboto', sans-serif;
+  --ff-logo: 'Raleway', sans-serif;
+  --fw-reg: 400;
+  --fw-med: 500;
+  --fw-bld: 700;
+  --fw-blck: 900;
+}
+
+/*---Body default values (fonts, colots etc.)---*/
+
+body {
+  margin: 0;
+  padding: 0;
+
+  color: var(--clr-font);
+  font-family: var(--ff-main);
+  font-weight: var(--fw-reg);
+  font-size: 14px;
+
+  background-color: var(--clr-background);
+}
+
+/*---Navbar and it's elements---*/
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 88px;
+
+  border-bottom: 1px solid #ececec;
+
+  user-select: none;
+}
+
+/*---Navbar log---*/
+
+.logo {
+  font-family: var(--ff-logo);
+  font-weight: var(--fw-bld);
+  font-size: 26px;
+  letter-spacing: 0.72px;
+}
+.logo > a {
+  color: #000;
+  text-decoration: none;
+}
+.logo > a > span {
+  color: var(--clr-blue);
+}
+.logo > span {
+  color: var(--clr-blue);
+}
+
+/*---Navbar buttons---*/
+
+.nav-buttons {
+  max-width: 15.875rem;
+  margin-left: 2.938rem;
+
+  list-style: none;
+}
+.nav-button {
+  margin-right: 0.8rem;
+
+  display: inline-block;
+}
+.nav-button > a {
+  font-weight: var(--fw-med);
+  color: var(--clr-font);
+  text-decoration: none;
+}
+.nav-button > a:hover {
+  color: var(--clr-blue);
+}
+#active-nav {
+  color: var(--clr-blue);
+}
+
+/*---Navbar contact anchors---*/
+.nav-contacts {
+  justify-content: flex-end;
+}
+.nav-contacts > a {
+  margin-right: 3.125rem;
+
+  font-weight: var(--fw-med);
+  color: var(--clr-font);
+  text-decoration: none;
+}
+.nav-contacts > a:hover {
+  color: var(--clr-blue);
+}
+
+/*---Header section---*/
+
+.header-mainpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--clr-background);
+  font-weight: var(--fw-blck);
+  text-align: center;
+  letter-spacing: 2.64px;
+
+  background-color: var(--clr-dark);
+}
+.header-mainpage > h1 {
+  margin-top: 12.5rem;
+
+  display: inline-block;
+  width: 40rem;
+
+  font-size: 44px;
+  line-height: 3.75rem;
+  text-align: center;
+}
+
+.call-to-action {
+  padding: 10px 41px 10px 42px;
+  margin-bottom: 12.5rem;
+
+  color: var(--clr-background);
+  font-family: var(--ff-main);
+  font-weight: var(--fw-bld);
+  font-size: 16px;
+  line-height: 1.875rem;
+
+  background-color: var(--clr-blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+/*---Feature section---*/
+
+.feature {
+  margin: 5.875rem 13.438rem;
+
+  display: flex;
+  justify-content: space-around;
+}
+.feature-text {
+  width: 16rem;
+}
+
+.feature-text > h3 {
+  font-size: 14px;
+  font-weight: var(--fw-bld);
+}
+.feature-text > p {
+  color: var(--clr-font-lght);
+  line-height: 1.5rem;
+  letter-spacing: 0.42px;
+}
+
+/*---What do we do section---*/
+.what-do-we-do {
+  margin-bottom: 5.25em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.what-do-we-do > h2 {
+  margin-bottom: 3.125rem;
+
+  font-size: 36px;
+  font-weight: var(--fw-bld);
+}
+.what-do-we-do-photos > img {
+  margin-right: 1.875rem;
+}
+
+/*---Our team section---*/
+
+.our-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  background-color: var(--clr-background-darker);
+}
+.our-team > h2 {
+  margin-block: 5.875rem 3.125rem;
+  font-size: 36px;
+  font-weight: var(--fw-bld);
+}
+.team-members {
+  display: flex;
+}
+.team-member {
+  margin-left: 1.875rem;
+  margin-bottom: 5.875rem;
+
+  background-color: var(--clr-background);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.team-member > h3 {
+  font-size: 16px;
+  font-weight: var(--fw-med);
+}
+.team-member > p {
+  padding-bottom: 1.875rem;
+
+  color: var(--clr-font-lght);
+  font-size: 16px;
+}
+
+/*---Footer---*/
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  color: var(--clr-background);
+
+  background-color: var(--clr-dark);
+}
+.footer > * {
+  margin-left: 215px;
+}
+.footer > .logo {
+  margin-block: 3.75rem 1.25rem;
+
+  user-select: none;
+}
+.footer-adress {
+  margin-bottom: 0.563rem;
+
+  line-height: 1.5rem;
+  letter-spacing: 0.72px;
+}
+.footer-mail {
+  margin-bottom: 0.563rem;
+
+  color: var(--clr-background);
+  line-height: 1.5rem;
+  letter-spacing: 0.72px;
+  text-decoration: none;
+
+  opacity: 0.6;
+}
+.footer-phone {
+  margin-bottom: 3.75rem;
+
+  color: var(--clr-background);
+  line-height: 1.5rem;
+  letter-spacing: 0.72px;
+  text-decoration: none;
+
+  opacity: 0.6;
+}
+.footer-mail:hover,
+.footer-phone:hover {
+  color: var(--clr-blue);
+}
+/*----------------------
+----STRONA PORTFOLIO----
+----------------------*/
+
+.portfolio {
+  margin: 5.875rem 13.438rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*---Filters bar---*/
+
+.filters {
+  display: inline-flex;
+
+  list-style: none;
+}
+
+.filter > button {
+  padding: 0.375rem 1.375rem;
+  margin-right: 0.5rem;
+
+  color: var(--clr-font);
+  font-family: var(--ff-main);
+  font-weight: var(--fw-med);
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 1.625rem;
+
+  border-radius: 4px;
+  border: none;
+  background-color: var(--clr-background-darker);
+
+  cursor: pointer;
+  user-select: none;
+}
+.filter > button:hover {
+  color: var(--clr-background);
+
+  background-color: var(--clr-blue);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/*---Projects group---*/
+.projects {
+  margin-top: 2.125rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project {
+  margin-bottom: 1.8rem;
+
+  box-sizing: border-box;
+
+  border: 1px solid #eeeeee;
+}
+.project > img {
+  user-select: none;
+}
+.project > h3 {
+  margin: 1.25rem 1.5rem 0.25rem 1.5rem;
+
+  font-weight: var(--fw-bld);
+  font-size: 18px;
+  line-height: 2.25rem;
+  letter-spacing: 0.06em;
+}
+.project > p {
+  margin: 0 1.5rem 1.25rem 1.5rem;
+
+  color: var(--clr-font-lght);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875rem;
+  letter-spacing: 0.03em;
+}
