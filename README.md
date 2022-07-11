@@ -1,2 +1,2 @@
-# goit-markup-hw-02
- Zadanie domowe HTML+CSS 2 GoIT | Mateusz Martin
+# goit-markup-hw-03
+ Zadanie domowe HTML+CSS 3 GoIT | Mateusz Martin
