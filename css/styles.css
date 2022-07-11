@@ -55,18 +55,14 @@ body {
 .logo {
   padding-left: 10rem;
 
+  color: #000;
+  text-decoration: none;
   font-family: var(--ff-logo);
   font-weight: var(--fw-bld);
   font-size: 26px;
   letter-spacing: 0.72px;
 }
-.logo > a {
-  color: #000;
-  text-decoration: none;
-}
-.logo > a > span {
-  color: var(--clr-blue);
-}
+
 .logo > span {
   color: var(--clr-blue);
 }
